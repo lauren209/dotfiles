@@ -49,3 +49,10 @@
 [user]
 	email = lauren209@live.com
 	name = lauren defrancesco
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential]
+	helper = osxkeychain
